@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+db.json
+public
+# blog
+chenall-site
+.deploy
+backup
+hexo

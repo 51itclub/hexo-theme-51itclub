@@ -1,0 +1,134 @@
+<div class="panel-footer">
+
+
+
+  <div id="site-info">
+    <span class='author'>
+  <% if (config.author){ %>
+  &copy; <%= UserConfig.SiteDate %> <a href='<%= config.author_url %>' target="_blank" style="text-decoration:none;color:#333;"><%= config.author %></a>
+  <% } else { %>
+  &copy; <%= UserConfig.SiteDate %> <%= UserConfig.title %>
+  <% } %>
+    &nbsp;&nbsp;</span>
+  <% if (UserConfig.Beian) {%><a href='http://www.miibeian.gov.cn/' target="_blank" ><%-UserConfig.Beian%></a></span><%}%>
+  <% if (UserConfig.analytics && UserConfig.analytics.provider) {
+       var provider = UserConfig.analytics.provider.split(',');
+       provider.forEach(function(t){
+     %><span id='analytics-<%-t%>'><%- partial('../_analytics/'+t,{mod_info:UserConfig.analytics[t]}) -%></span><%
+       })
+  }%>
+
+<span class="pull-right">
+    <a target=blank href=http://wpa.qq.com/msgrd?V=3&uin=<%- UserConfig.qq_num %>&Site=IT部落&Menu=yes><img border="0" SRC=http://wpa.qq.com/pa?p=1:<%- UserConfig.qq_num %>:4 alt="点击这里给我发消息"></a>
+
+  <!--
+  <a href="http://wpa.qq.com/msgrd?V=3&Uin=<%- UserConfig.qq_num %>&Site=51itclub.net&Menu=yes&from=blog" target="_blank" title="QQ"><img src="<%-config.root %>img/site_qq.jpg" alt="QQ" /></a>
+
+
+
+
+
+  -->
+</span>
+
+  </div>
+  <div id="copyright">Blog Powered by <a href='http://hexo.io/' target="_blank" <%if (hexo.env.version){%> title="本站由Hexo V<%- hexo.env.version%> 生成"<%}%>><strong>Hexo</strong></a> Theme <strong><a href='https://github.com/51itclub/hexo-theme-51itclub' target="_blank">51itclub</a></strong> Based on <strong><a href='https://github.com/chenall/hexo-theme-chenall' target="_blank" >chenall V2.2</a></strong><span class="pull-right"> 更新时间: <em><%-time(page.updated,'YYYY-MM-DD HH:mm:ss')%></em></span></div>
+</div>
+<div class="clearfix"></div>
+
+<style>
+#footer .line {
+	width: 100%;
+	height: 14em;
+	margin: 0 auto;
+}
+/* @media only screen and (min-width:768px) */
+#footer .line {
+	width: 10em;
+	float: left;
+	position: relative;
+}
+.info {
+	font-family: "covered_by_your_graceregular";
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 150%;
+	line-height: 1.3em;
+	width: 90%;
+	margin: 0 auto;
+	color: #000;
+}
+/* @media only screen and (min-width:768px) */
+.info {
+	margin: 4.5em 0 2em 0;
+	float: left;
+	width: 75%;
+}
+.social-font {
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+	padding-left: 3%;
+}
+/* @media only screen and (min-width:568px) */
+.social-font {
+	padding-left: 20%;
+}
+/* @media only screen and (min-width:768px) */
+.social-font {
+	width: 15em;
+	position: absolute;
+	right: -2em;
+	top: 3em;
+}
+#footer .line span {
+	display: block;
+	width: 0.5em;
+	height: 6.25em;
+	border-right: 0.125em solid pink;
+	margin: 0 auto;
+}
+/* @media only screen and (min-width:768px) */
+#footer .line span {
+	position: absolute;
+	left: 3em;
+	margin: 0 0 1.5em;
+}
+.author_img {
+	width: 6.87em;
+	height: 6.87em;
+	margin: 0 auto;
+	background: no-repeat url(<%-config.root %>img/author.gif) left top;
+	-webkit-background-size: 6.875em 6.875em;
+	-moz-background-size: 6.875em 6.875em;
+	background-size: 6.875em 6.875em;
+	-webkit-border-radius: 3.4375em;
+	border-radius: 3.4375em;
+	-webkit-transition: -webkit-transform 2s ease-out;
+	-moz-transition: -moz-transform 2s ease-out;
+	-o-transition: -o-transform 2s ease-out;
+	-ms-transition: -ms-transform 2s ease-out;
+	transition: transform 2s ease-out;
+}
+.author_img:hover {
+    transform: rotateZ(360deg);
+}
+/* @media only screen and (min-width:768px) */
+.author_img {
+	position: absolute;
+	top: 6em;
+	margin: 0 0 1.5em;
+}
+</style>
+<div id="footer">
+	<div class="line">
+		<span></span>
+		<div class="author_img"></div>
+	</div>
+	<section class="info">
+		<p> Hello ,I'm Nicky in Google. <br>
+			This is my blog,believe it or not.</p>
+	</section>
+	<div class="social-font">
+	</div>
+</div>

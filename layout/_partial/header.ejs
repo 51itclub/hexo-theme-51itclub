@@ -1,0 +1,117 @@
+﻿<nav id="main-nav" class="navbar navbar-default navbar-fixed-top <% if (UserConfig.bs_nav_inverse) { %>navbar-inverse <%}%>" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+
+<div><p><table cellSpacing=0 cellPadding=0 align=center background=<%-config.root %>img/ysz5.gif>
+<tbody> <tr> <td style="FILTER: chroma(color=#336699)">
+<table align=center background=<%-config.root %>img/ysz4.gif><tbody><tr>
+<td align=middle style="padding: .3em .5em .2em .5em;"><a style="text-decoration:none;" href="<%- config.root %>"><font style="FONT-WEIGHT: normal; FONT-SIZE: 18pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" face=华文行楷 color=purple><strong><%- UserConfig.title %><%if (hexo.debug) {%>[<span class='testIE IE9'>IE9</span><span class='testIE IE8'>IE8</span><span class='testIE IE7'>lte IE7</span>]<%}%></strong></font></a></td></tr></tbody></table></td></tr></tbody></table></p></div>
+
+
+
+<!--
+<a class="navbar-brand" href="<%- config.root %>"><%- UserConfig.title %><%if (hexo.debug) {%>[<span class='testIE IE9'>IE9</span><span class='testIE IE8'>IE8</span><span class='testIE IE7'>lte IE7</span>]<%}%></a>
+
+
+
+<TABLE align=center background=<%-config.root %>img/ysz1.gif border=0><TBODY><TR><TD style="FILTER: mask(color=#000000)" align=middle><a style="text-decoration:none;" href="<%- config.root %>"><FONT style="FONT-SIZE: 18pt" face=隶书 color=#336699><B><%- UserConfig.title %><%if (hexo.debug) {%>[<span class='testIE IE9'>IE9</span><span class='testIE IE8'>IE8</span><span class='testIE IE7'>lte IE7</span>]<%}%></B></FONT></a></TD></TR></TBODY></TABLE>
+
+
+<TABLE align=center background=<%-config.root %>img/ysz2.gif border=0><TBODY><TR><TD style="FILTER: mask(color=#000000)" align=middle><a style="text-decoration:none;" href="<%- config.root %>"><FONT style="FONT-SIZE: 18pt" face=隶书 color=#336699><B><%- UserConfig.title %><%if (hexo.debug) {%>[<span class='testIE IE9'>IE9</span><span class='testIE IE8'>IE8</span><span class='testIE IE7'>lte IE7</span>]<%}%></B></FONT></a></TD></TR></TBODY></TABLE>
+
+
+<div style="FONT-SIZE: 26pt; FILTER: dropshadow(color=#228B22,offX=5,offY=3,Positive=1); WIDTH: 100%; COLOR: #ff7f50; LINE-HEIGHT: 150%; FONT-FAMILY: 华文行楷"><strong><a style="text-decoration:none;" href="<%- config.root %>"><%- UserConfig.title %><%if (hexo.debug) {%>[<span class='testIE IE9'>IE9</span><span class='testIE IE8'>IE8</span><span class='testIE IE7'>lte IE7</span>]<%}%></a></strong></div>
+
+
+
+
+<div><p><table cellSpacing=0 cellPadding=0 align=center background=<%-config.root %>img/ysz5.gif>
+<tbody> <tr> <td style="FILTER: chroma(color=#336699)">
+<table align=center background=<%-config.root %>img/ysz4.gif><tbody><tr>
+<td align=middle style="padding: .3em .5em .2em .5em;"><a style="text-decoration:none;" href="<%- config.root %>"><font style="FONT-WEIGHT: normal; FONT-SIZE: 18pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" face=华文行楷 color=#336699><strong><%- UserConfig.title %><%if (hexo.debug) {%>[<span class='testIE IE9'>IE9</span><span class='testIE IE8'>IE8</span><span class='testIE IE7'>lte IE7</span>]<%}%></strong></font></a></td></tr></tbody></table></td></tr></tbody></table></p></div>
+
+
+
+<div><p><table cellSpacing=0 cellPadding=0 align=center background=<%-config.root %>img/ysz5.gif>
+<tbody> <tr> <td style="FILTER: chroma(color=#336699)">
+<table align=center background=<%-config.root %>img/ysz4.gif><tbody><tr>
+<td align=middle style="padding: .3em .5em .2em .5em;"><a style="text-decoration:none;" href="<%- config.root %>"><font style="FONT-WEIGHT: normal; FONT-SIZE: 18pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" face=华文行楷 color=#ff7f50><strong><%- UserConfig.title %><%if (hexo.debug) {%>[<span class='testIE IE9'>IE9</span><span class='testIE IE8'>IE8</span><span class='testIE IE7'>lte IE7</span>]<%}%></strong></font></a></td></tr></tbody></table></td></tr></tbody></table></p></div>
+
+
+<div><p><table cellSpacing=0 cellPadding=0 align=center background=<%-config.root %>img/ysz5.gif>
+<tbody> <tr> <td style="FILTER: chroma(color=#336699)">
+<table align=center background=<%-config.root %>img/ysz4.gif><tbody><tr>
+<td align=middle style="padding: .3em .5em .2em .5em;"><a style="text-decoration:none;" href="<%- config.root %>"><font style="FONT-WEIGHT: normal; FONT-SIZE: 18pt; LINE-HEIGHT: normal; FONT-STYLE: normal; FONT-VARIANT: normal" face=华文行楷 color=purple><strong><%- UserConfig.title %><%if (hexo.debug) {%>[<span class='testIE IE9'>IE9</span><span class='testIE IE8'>IE8</span><span class='testIE IE7'>lte IE7</span>]<%}%></strong></font></a></td></tr></tbody></table></td></tr></tbody></table></p></div>
+
+-->
+
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav dropdown-hover" style="margin-left:36px;">
+  <%  for (var i in UserConfig.menu) {
+    if ( Object.prototype.toString.call(UserConfig.menu[i] ) === '[object Object]' ) {
+    %>
+      <li class='dropdown'>
+        <a class='dropdown-toggle' data-toggle='dropdown' href='#'><%= i %><b class='caret'></b></a>
+        <ul class='dropdown-menu'>
+    <%      for (var j in UserConfig.menu[i]) { %>
+          <li><%-link_to(RealPath(UserConfig.menu[i][j]),__(j)) -%></li>
+    <%      } %>
+        </ul>
+      </li>
+    <%} else {%>
+        <li item='<%-path%>' <%if(page.path.toLowerCase().indexOf(UserConfig.menu[i].toLowerCase())==0){%>class='active'<%}%>><%-link_to(RealPath(UserConfig.menu[i]),__(i)) -%></li>
+      <%  }
+  }%>
+
+
+
+<li class="dropdown">
+    <a class="dropdown-toggle"  style="color:blue;" href="#" data-toggle="dropdown" _hover-ignore="1">在线直播<b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        <li><a target="_blank" style="color:red;" title="64码高清" href="/blog/tv/">64码高清</a></li>
+        <li><a target="_blank" title="央广电台" href="/blog/tv/ygdt.html">央广电台</a></li>
+        <li><a target="_blank" title="豆瓣音乐" href="/blog/tv/">豆瓣音乐</a></li>
+        <li><a target="_blank" title="易视直播" href="http://tv2.chenall.tk">易视直播</a></li>
+        <li><a target="_blank" style="color:blue;" title="其它更多" href="/blog/tv/more.html">其它更多</a></li>
+    </ul>
+</li>
+<li><a target="_blank" style="color:red;" title="论坛" href="http://bbs.51itclub.net" _hover-ignore="1">论坛</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <% if (UserConfig.rss) { %>
+        <li><a href="<%- RealPath(UserConfig.rss) %>" target="_blank">RSS</a></li>
+      <% } %>
+      <% if (UserConfig.qq_num) { %>
+        <li><a href="http://<%- UserConfig.qq_num %>.qzone.qq.com" target="_blank" style="color:purple;">QZone</a></li>
+      <% } %>
+      <% if (UserConfig.google_id) { %>
+        <li><a href="http://plus.google.com/<%- UserConfig.google_id %>/" target="_blank" style="color:red;">Google+</a></li>
+      <% } %>
+      <% if (UserConfig.twitter && UserConfig.twitter.username) { %>
+        <li><a href="https://twitter.com/<%- UserConfig.twitter.username %>" target="_blank">Twitter</a></li>
+      <% } else if (UserConfig.twitter_id) { %>
+        <li><a href="https://twitter.com/<%- UserConfig.twitter_id %>" target="_blank">Twitter</a></li>
+      <% } %>
+      <% if (UserConfig.facebook_id) { %>
+        <li><a href="https://www.facebook.com/<%- UserConfig.facebook_id %>" target="_blank" style="color:blue;">FaceBook</a></li>
+      <% } %>
+      <% if (UserConfig.linked_id) { %>
+        <li><a href="http://www.linkedin.com/in/<%- UserConfig.linkedin_id %>" target="_blank">领英</a></li>
+      <% } %>
+      <% if (UserConfig.github_id) { %>
+        <li><a href="https://github.com/<%- UserConfig.github_id %>" target="_blank">GitHub</a></li>
+      <% } %>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="clearfix"></div>
